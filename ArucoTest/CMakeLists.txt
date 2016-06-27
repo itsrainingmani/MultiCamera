@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project( ArucoTest )
+SET(CMAKE_MODULE_PATH ${CMAKE_INSTALL_PREFIX}/lib/cmake/ )
+SET(CMAKE_CXX_FLAGS "-std=c++11")
+find_package(aruco REQUIRED )
+add_executable(ArucoTest ArucoTest.cpp)
+target_link_libraries(ArucoTest  ${aruco_LIBS})
