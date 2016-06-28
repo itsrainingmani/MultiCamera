@@ -1,6 +1,7 @@
 //saves all the images of the dictionary indicated to a dicrectory
 
 #include <aruco/aruco.h>
+#include <aruco/dictionary.h>
 #include <opencv2/highgui/highgui.hpp>
 #include <string>
 
@@ -19,6 +20,7 @@ int main(int argc,char **argv){
 
 	MarkerDetector Md;
 	vector<Marker> Markers;
+	Md.setDictionary("TAG36h11");
 
 	//Need a pointer to the Dictionary for the detectMarkerk method to work
 	//Ptr<Dictionary> dictionary = getPredefinedDictionary(DICT_6X6_250);
