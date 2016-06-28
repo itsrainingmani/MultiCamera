@@ -102,41 +102,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CameraStreamer
+# Target rules for targets named SingleThread
 
 # Build rule for target.
-CameraStreamer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CameraStreamer
-.PHONY : CameraStreamer
+SingleThread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SingleThread
+.PHONY : SingleThread
 
 # fast build rule for target.
-CameraStreamer/fast:
-	$(MAKE) -f CMakeFiles/CameraStreamer.dir/build.make CMakeFiles/CameraStreamer.dir/build
-.PHONY : CameraStreamer/fast
+SingleThread/fast:
+	$(MAKE) -f CMakeFiles/SingleThread.dir/build.make CMakeFiles/SingleThread.dir/build
+.PHONY : SingleThread/fast
 
-CameraStreamer.o: CameraStreamer.cpp.o
-.PHONY : CameraStreamer.o
+SingleThread.o: SingleThread.cpp.o
+.PHONY : SingleThread.o
 
 # target to build an object file
-CameraStreamer.cpp.o:
-	$(MAKE) -f CMakeFiles/CameraStreamer.dir/build.make CMakeFiles/CameraStreamer.dir/CameraStreamer.cpp.o
-.PHONY : CameraStreamer.cpp.o
+SingleThread.cpp.o:
+	$(MAKE) -f CMakeFiles/SingleThread.dir/build.make CMakeFiles/SingleThread.dir/SingleThread.cpp.o
+.PHONY : SingleThread.cpp.o
 
-CameraStreamer.i: CameraStreamer.cpp.i
-.PHONY : CameraStreamer.i
+SingleThread.i: SingleThread.cpp.i
+.PHONY : SingleThread.i
 
 # target to preprocess a source file
-CameraStreamer.cpp.i:
-	$(MAKE) -f CMakeFiles/CameraStreamer.dir/build.make CMakeFiles/CameraStreamer.dir/CameraStreamer.cpp.i
-.PHONY : CameraStreamer.cpp.i
+SingleThread.cpp.i:
+	$(MAKE) -f CMakeFiles/SingleThread.dir/build.make CMakeFiles/SingleThread.dir/SingleThread.cpp.i
+.PHONY : SingleThread.cpp.i
 
-CameraStreamer.s: CameraStreamer.cpp.s
-.PHONY : CameraStreamer.s
+SingleThread.s: SingleThread.cpp.s
+.PHONY : SingleThread.s
 
 # target to generate assembly for a file
-CameraStreamer.cpp.s:
-	$(MAKE) -f CMakeFiles/CameraStreamer.dir/build.make CMakeFiles/CameraStreamer.dir/CameraStreamer.cpp.s
-.PHONY : CameraStreamer.cpp.s
+SingleThread.cpp.s:
+	$(MAKE) -f CMakeFiles/SingleThread.dir/build.make CMakeFiles/SingleThread.dir/SingleThread.cpp.s
+.PHONY : SingleThread.cpp.s
 
 # Help Target
 help:
@@ -144,12 +144,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... CameraStreamer"
+	@echo "... SingleThread"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CameraStreamer.o"
-	@echo "... CameraStreamer.i"
-	@echo "... CameraStreamer.s"
+	@echo "... SingleThread.o"
+	@echo "... SingleThread.i"
+	@echo "... SingleThread.s"
 .PHONY : help
 
 

@@ -56,38 +56,38 @@ CMAKE_SOURCE_DIR = /home/money/DroneLab/MultiCamera/SingleThreadedCameraStreamer
 CMAKE_BINARY_DIR = /home/money/DroneLab/MultiCamera/SingleThreadedCameraStreamer/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/CameraStreamer.dir
+# Target rules for target CMakeFiles/SingleThread.dir
 
 # All Build rule for target.
-CMakeFiles/CameraStreamer.dir/all:
-	$(MAKE) -f CMakeFiles/CameraStreamer.dir/build.make CMakeFiles/CameraStreamer.dir/depend
-	$(MAKE) -f CMakeFiles/CameraStreamer.dir/build.make CMakeFiles/CameraStreamer.dir/build
+CMakeFiles/SingleThread.dir/all:
+	$(MAKE) -f CMakeFiles/SingleThread.dir/build.make CMakeFiles/SingleThread.dir/depend
+	$(MAKE) -f CMakeFiles/SingleThread.dir/build.make CMakeFiles/SingleThread.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/money/DroneLab/MultiCamera/SingleThreadedCameraStreamer/build/CMakeFiles  1
-	@echo "Built target CameraStreamer"
-.PHONY : CMakeFiles/CameraStreamer.dir/all
+	@echo "Built target SingleThread"
+.PHONY : CMakeFiles/SingleThread.dir/all
 
 # Include target in all.
-all: CMakeFiles/CameraStreamer.dir/all
+all: CMakeFiles/SingleThread.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CameraStreamer.dir/rule: cmake_check_build_system
+CMakeFiles/SingleThread.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/money/DroneLab/MultiCamera/SingleThreadedCameraStreamer/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CameraStreamer.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SingleThread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/money/DroneLab/MultiCamera/SingleThreadedCameraStreamer/build/CMakeFiles 0
-.PHONY : CMakeFiles/CameraStreamer.dir/rule
+.PHONY : CMakeFiles/SingleThread.dir/rule
 
 # Convenience name for target.
-CameraStreamer: CMakeFiles/CameraStreamer.dir/rule
-.PHONY : CameraStreamer
+SingleThread: CMakeFiles/SingleThread.dir/rule
+.PHONY : SingleThread
 
 # clean rule for target.
-CMakeFiles/CameraStreamer.dir/clean:
-	$(MAKE) -f CMakeFiles/CameraStreamer.dir/build.make CMakeFiles/CameraStreamer.dir/clean
-.PHONY : CMakeFiles/CameraStreamer.dir/clean
+CMakeFiles/SingleThread.dir/clean:
+	$(MAKE) -f CMakeFiles/SingleThread.dir/build.make CMakeFiles/SingleThread.dir/clean
+.PHONY : CMakeFiles/SingleThread.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/CameraStreamer.dir/clean
+clean: CMakeFiles/SingleThread.dir/clean
 .PHONY : clean
 
 #=============================================================================
