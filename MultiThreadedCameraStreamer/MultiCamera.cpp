@@ -1,5 +1,4 @@
 #include "CameraStreamer.hpp"
-#include <opencv2/highgui.hpp>
 
 int main()
 {
@@ -10,7 +9,7 @@ int main()
     };
  
     //USB Camera indices
-    vector<int> capture_index = { 0, 1 };
+    vector<int> capture_index = { CV_CAP_OPENNI, CV_CAP_OPENNI + 1 };
  
     //Highgui window titles
     vector<string> label;
@@ -21,12 +20,12 @@ int main()
     }
  
     //Make an instance of CameraStreamer
-    CameraStreamer cam(capture_source);
+    CameraStreamer cam(capture_index);
  
     while (waitKey(30) != 27)
     {
         //Retrieve frames from each camera capture thread
-        for (int i = 0; i < capture_source.size(); i++)
+        for (int i = 0; i < capture_index.size(); i++)
         {
             Mat frame;
             //Pop frame from queue and check if the frame is valid

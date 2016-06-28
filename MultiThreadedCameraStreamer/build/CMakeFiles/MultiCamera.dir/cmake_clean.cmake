@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o"
   "CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o"
+  "CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o"
   "MultiCamera.pdb"
   "MultiCamera"
 )

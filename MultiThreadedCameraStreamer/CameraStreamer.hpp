@@ -3,8 +3,9 @@
 #include <string>
 #include <thread>
 #include <vector>
-#include <tbb/concurrent_queue.h>
+#include "tbb/concurrent_queue.h"
 #include <opencv2/videoio.hpp>
+#include <opencv2/highgui.hpp>
  
 using namespace std;
 using namespace cv;

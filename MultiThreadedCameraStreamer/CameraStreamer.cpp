@@ -30,7 +30,8 @@ void CameraStreamer::captureFrame(int index)
     {
         Mat frame;
         //Grab frame from camera capture
-        (*capture) >> frame;
+        capture->grab();
+        capture->retrieve(frame, CV_CAP_OPENNI_BGR_IMAGE);
         //Put frame to the queue
         frame_queue[index]->push(frame);     
         //relase frame resource

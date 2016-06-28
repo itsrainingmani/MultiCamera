@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/money/DroneLab/MultiCamera/CameraStreamer/CameraStreamer.cpp
+/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/CameraStreamer.cpp
 CameraStreamer.hpp
-/home/money/DroneLab/MultiCamera/CameraStreamer/CameraStreamer.hpp
+/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/CameraStreamer.hpp
 
-/home/money/DroneLab/MultiCamera/CameraStreamer/CameraStreamer.hpp
+/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/CameraStreamer.hpp
 iostream
 -
 string
@@ -20,9 +20,15 @@ thread
 vector
 -
 tbb/concurrent_queue.h
--
+/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/tbb/concurrent_queue.h
 opencv2/videoio.hpp
 -
+opencv2/highgui.hpp
+-
+
+/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/MultiCamera.cpp
+CameraStreamer.hpp
+/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/CameraStreamer.hpp
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

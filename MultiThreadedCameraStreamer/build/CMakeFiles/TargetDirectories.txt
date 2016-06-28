@@ -1,1 +1,1 @@
-/home/money/DroneLab/MultiCamera/CameraStreamer/build/CMakeFiles/MultiCamera.dir
+/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build/CMakeFiles/MultiCamera.dir
