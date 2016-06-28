@@ -4,61 +4,53 @@
 #include <aruco/dictionary.h>
 #include <iostream>
 #include <string>
+#include <thread>
  
 using namespace cv;
 using namespace std;
 using namespace aruco;
  
-int main()
-{
-    //The number of connected USB camera(s)
-    const uint CAM_NUM = 2;
- 
-    //This will hold the VideoCapture objects
-    VideoCapture camCaptures[CAM_NUM];
- 
-    //This will hold the resulting frames from each camera
-    Mat camFrames[CAM_NUM];
-
-    MarkerDetector Md;
-    Md.setDictionary("TAG36h11");
-    vector<Marker> Markers;
- 
-    //This will be used for highgui window name
-    string labels[CAM_NUM];
-
-    int kinectNum[2] = {CV_CAP_OPENNI, CV_CAP_OPENNI + 1};
- 
-    //Initialization of VideoCaptures
-    for (int i = 0; i < CAM_NUM; i++)
-    {
-        //Md[i].setDictionary("TAG36h11");
-        //Init label for highgui window name
-        labels[i] = "Camera " + to_string(i);
-        //Opening camera capture stream
-        camCaptures[i].open(kinectNum[i]);
+void tag_detection(int camera_id){
+    //cout<<"New threads created"<<endl;
+    VideoCapture cap;
+    cap.open(camera_id);
+    
+    if (!cap.isOpened()){
+        cout<<"Cannot open video camera "<<camera_id<<endl;
+        return;
     }
- 
-    //continous loop until 'Esc' key is pressed
-    while (waitKey(1) != 27){
-        for (int i = 0; i < CAM_NUM; i++)
-        {
-            camCaptures[i].grab();
-            camCaptures[i].retrieve(camFrames[i], CV_CAP_OPENNI_BGR_IMAGE);
-            Md.detect(camFrames[i], Markers);
+    string label = "Camera - " + to_string(camera_id);
+    Mat frame;
+    MarkerDetector md;
+    md.setDictionary("TAG36h11");
+    vector<Marker> markers;
 
-            for (unsigned int j = 0; i < Markers.size(); j++){
-                cout<<Markers[j]<<endl;
-                Markers[j].draw(camFrames[i], Scalar(0,0,255), 2);
+    while(cap.grab()){
+        cap.retrieve(frame, CV_CAP_OPENNI_BGR_IMAGE);
+        md.detect(frame, markers);
+        for (unsigned int i = 0; i < markers.size(); i++){
+                cout<<markers[i]<<endl;
+                markers[i].draw(frame, Scalar(0,0,255), 2);
             }
-            imshow(labels[i], camFrames[i]);
-        }
+            imshow(label, frame);
+            if (waitKey(30) == 27){
+                break;
+            }
     }
- 
-    //Releasing all VideoCapture resources
-    for (int i = 0; i < CAM_NUM; i++)
-    {
-        camCaptures[i].release();
+    cap.release();
+    return;
+}
+
+int main(int argc, char* argv[])
+{
+    const uint CAM_NUM = 2;
+    cout<<"Program ran"<<endl;
+    //vector<thread*> camera_threads;
+    //This will hold the VideoCapture objects
+    vector<int> kinect_id = {CV_CAP_OPENNI, CV_CAP_OPENNI + 1};
+    for (int i = 0; i < kinect_id.size(); i++){
+        thread* t = new thread(&tag_detection, kinect_id[i]);
+        t->detach();
     }
     return 0;
 }

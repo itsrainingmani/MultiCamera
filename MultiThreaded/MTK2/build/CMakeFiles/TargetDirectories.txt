@@ -1,0 +1,1 @@
+/home/money/DroneLab/MultiCamera/MultiThreaded/MTK2/build/CMakeFiles/mtk2.dir
