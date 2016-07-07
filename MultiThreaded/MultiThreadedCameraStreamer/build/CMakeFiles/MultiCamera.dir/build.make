@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer
+CMAKE_SOURCE_DIR = /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build
+CMAKE_BINARY_DIR = /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MultiCamera.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/MultiCamera.dir/flags.make
 
 CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o: CMakeFiles/MultiCamera.dir/flags.make
 CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o: ../MultiCamera.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o -c /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/MultiCamera.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o -c /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/MultiCamera.cpp
 
 CMakeFiles/MultiCamera.dir/MultiCamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiCamera.dir/MultiCamera.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/MultiCamera.cpp > CMakeFiles/MultiCamera.dir/MultiCamera.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/MultiCamera.cpp > CMakeFiles/MultiCamera.dir/MultiCamera.cpp.i
 
 CMakeFiles/MultiCamera.dir/MultiCamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiCamera.dir/MultiCamera.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/MultiCamera.cpp -o CMakeFiles/MultiCamera.dir/MultiCamera.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/MultiCamera.cpp -o CMakeFiles/MultiCamera.dir/MultiCamera.cpp.s
 
 CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o.requires:
 .PHONY : CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o.requires
@@ -77,17 +77,17 @@ CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o.provides.build: CMakeFiles/MultiCam
 
 CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o: CMakeFiles/MultiCamera.dir/flags.make
 CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o: ../CameraStreamer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o -c /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/CameraStreamer.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o -c /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/CameraStreamer.cpp
 
 CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/CameraStreamer.cpp > CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/CameraStreamer.cpp > CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.i
 
 CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/CameraStreamer.cpp -o CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/CameraStreamer.cpp -o CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.s
 
 CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o.requires:
 .PHONY : CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o.requires
@@ -185,6 +185,6 @@ CMakeFiles/MultiCamera.dir/clean:
 .PHONY : CMakeFiles/MultiCamera.dir/clean
 
 CMakeFiles/MultiCamera.dir/depend:
-	cd /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build /home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build/CMakeFiles/MultiCamera.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build /home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build/CMakeFiles/MultiCamera.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MultiCamera.dir/depend
 

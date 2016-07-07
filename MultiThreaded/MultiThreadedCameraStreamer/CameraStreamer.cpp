@@ -35,6 +35,8 @@ void CameraStreamer::captureFrame(int index)
         //Put frame to the queue
         frame_queue[index]->push(frame);     
         //relase frame resource
+        //frame.release();
+        //imshow(to_string(index), frame);
         frame.release();
     }
 }

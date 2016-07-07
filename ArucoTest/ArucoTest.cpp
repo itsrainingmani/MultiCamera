@@ -11,7 +11,7 @@ using namespace aruco;
 
 int main(int argc,char **argv){
 
-	VideoCapture cap(0);
+	VideoCapture cap(CV_CAP_OPENNI);
 	if(!cap.isOpened())
 	{
 		cout<<"Cannot open video camera"<<endl;
@@ -36,7 +36,7 @@ int main(int argc,char **argv){
 	while (cap.grab())
 	{
 		Mat image, imageCopy;
-		cap.retrieve(image);
+		cap.retrieve(image, CV_CAP_OPENNI_BGR_IMAGE);
 		image.copyTo(imageCopy);
 
 		Md.detect(image, Markers);

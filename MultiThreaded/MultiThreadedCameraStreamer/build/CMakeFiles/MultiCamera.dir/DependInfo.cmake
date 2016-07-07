@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/CameraStreamer.cpp" "/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build/CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o"
-  "/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/MultiCamera.cpp" "/home/money/DroneLab/MultiCamera/MultiThreadedCameraStreamer/build/CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o"
+  "/home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/CameraStreamer.cpp" "/home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build/CMakeFiles/MultiCamera.dir/CameraStreamer.cpp.o"
+  "/home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/MultiCamera.cpp" "/home/money/DroneLab/MultiCamera/MultiThreaded/MultiThreadedCameraStreamer/build/CMakeFiles/MultiCamera.dir/MultiCamera.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -27,12 +27,14 @@ int main()
         //Retrieve frames from each camera capture thread
         for (int i = 0; i < capture_index.size(); i++)
         {
+            /*
             Mat frame;
             //Pop frame from queue and check if the frame is valid
             if (cam.frame_queue[i]->try_pop(frame)){
                 //Show frame on Highgui window
                 imshow(label[i], frame);
             }
+            */
         }
     }
     return 0;
