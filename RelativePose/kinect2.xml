@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<opencv_storage>
+	<image_width>640</image_width>
+	<image_height>480</image_height>
+	<camera_name>narrow_stereo</camera_name>
+	<camera_matrix type_id="opencv-matrix">
+		<rows>3</rows>
+		<cols>3</cols>
+        <dt>f</dt>
+		<data>534.664864 0. 316.294053 0. 538.333825 264.217244 0. 0. 1.</data>
+	</camera_matrix>
+	<distortion_model>plumb_bob</distortion_model>
+    <distortion_coefficients type_id="opencv-matrix">
+        <rows>1</rows>
+        <cols>5</cols>
+        <dt>f</dt>
+        <data>0.108244 -0.216306 0.006615 -0.000183 0.</data>
+    </distortion_coefficients>
+    <rectification_matrix type_id="opencv-matrix">
+        <rows>3</rows>
+        <cols>3</cols>
+        <dt>f</dt>
+        <data>1. 0. 0. 0. 1. 0. 0. 0. 1.</data>
+    </rectification_matrix>
+    <projection_matrix type_id="opencv-matrix">
+        <rows>3</rows>
+        <cols>4</cols>
+        <dt>f</dt>
+        <data>540.329102 0. 315.540983 0. 0. 543.804382 265.889287 0. 0. 0. 1. 0.</data>
+    </projection_matrix>
+</opencv_storage>
